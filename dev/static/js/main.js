@@ -31,7 +31,7 @@ window.onload = function() {
 
     function type() {
       if (i < t.str.length) {
-        t.target.innerText += t.str.charAt(i);
+        t.target.innerHTML += t.str.charAt(i);
         i++;
         setTimeout(type, t.speed);
       }
