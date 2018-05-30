@@ -1,0 +1,21 @@
+@font-face{
+font-family: 'Ubuntu';
+src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.indent {
+	text-indent: 45px;
+}
+
+.title__h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.title__h2 {
+    font-size: 40px;
+    text-align: center;
+}
+

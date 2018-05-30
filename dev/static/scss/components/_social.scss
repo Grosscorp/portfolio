@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  margin: 40px auto 10px auto;
+
+  &__icon {
+    display: flex;
+    font-size: 40px;
+    color: $color-dark;
+    margin: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-achtung;
+    }
+  }
+}

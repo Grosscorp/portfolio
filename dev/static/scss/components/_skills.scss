@@ -1,0 +1,115 @@
+.skill {
+  display: flex;
+  justify-content: center;
+  background: #fff url('../img/general/skillbg3.jpg'); 
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+  }
+
+  &__title {
+    font-size: 40px;
+    text-align: center;
+
+    @include sm {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.main-skill {
+  display: flex;
+  flex-direction: row;
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+  }
+
+  &__icon {
+    margin: 0 20px;
+
+    @include sm {
+      align-self: center;
+      max-width: 150px;
+    }
+  }
+
+  &__img {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  &__level {
+    text-align: center;
+  }
+
+  &__caption {
+    font-size: 25px;
+
+    @include sm {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+
+    &--html {
+      background: #e44d26;
+      border: 4px solid #e44d26;
+    }
+    &--css {
+      background: #006eba;
+      border: 4px solid #006eba;
+    }
+    &--js {
+      background: #e9c932;
+      border: 4px solid #e9c932;
+    }
+
+    &--disable {
+      background: #fff;
+    }
+  }
+}
+
+.second-skill {
+  display: flex;
+  justify-content: center;
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+
+    @include sm {
+      margin: 10px;
+      font-size: 14px;
+    }
+  }
+
+  &__img {
+    display: inline-flex;
+    width: 100%;
+
+    @include sm {
+      display: none;
+    }
+  }
+}
+

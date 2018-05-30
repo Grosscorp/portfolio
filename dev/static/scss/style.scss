@@ -1,0 +1,17 @@
+@import 'vendors/normalize';
+
+@import 'helpers/mixins';
+
+@import 'varibles/colors';
+@import 'varibles/varibles';
+
+@import 'general/general';
+@import 'general/typography';
+
+@import 'components/header';
+@import 'components/mouse-scroll';
+@import 'components/skills';
+@import 'components/portfolio';
+@import 'components/footer';
+@import 'components/social';
+@import 'components/overlay';

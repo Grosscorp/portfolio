@@ -1,0 +1,72 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  background: #fff url('../img/general/portfoliobg6.jpg') no-repeat fixed center;
+  background-size: cover;
+
+  &__text {
+    color: $color-light;
+    text-align: center;
+    text-shadow: 0 0 6px #000;
+  }
+
+  &__title {
+    margin: 40px auto 20px auto;
+    font-size: 60px;
+
+    @include sm {
+      font-size: 40px;
+    }
+  }
+
+  &__description {
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 0 20px 20px 20px;
+
+    @include sm {
+      font-size: 20px;
+    }
+  }
+  
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 20px;
+
+    @include lg {
+      margin: 10px;
+      width: 45%;
+    }
+
+    @include sm {
+      width: 100%;
+    }
+
+    &:nth-child(5),
+    &:nth-child(6) {
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  &__img {
+    display: inline-flex;
+    width: 100%;
+    border-radius: 4px;
+  }
+}
